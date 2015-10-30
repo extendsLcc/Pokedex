@@ -1,0 +1,224 @@
+
+body, ul , li{
+	margin: 0;
+	padding: 0;
+	font-family: verdana;
+}
+
+#clear{	clear: both;}
+
+#container{
+	width: 70%;
+	height: 100%;
+	margin: 120px auto;
+}
+
+#menu li {
+	margin-left: 10px;
+	padding: 20px 60px;
+	float: left;
+	background: #19C1FF;
+	font-size: 33px;
+}
+
+/*-------------------------------TYPE REF BUTTONS-----------------------------------------------------*/
+
+.typeref{
+	width: 66px;
+	padding: 2px 5px;
+	margin-bottom: 3px;
+	display: inline-block;
+	position: relative;
+	border: solid 1px #586060;
+	border-radius: 5px;
+	font-family: arial black;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 14px;
+	text-align: center;
+	color: #fff;
+	text-shadow: 2px 2px #707878 ;
+	box-shadow: 1px 1px 3px 0px #fff inset;
+}
+
+.typeref:after {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	box-shadow: -1px -1px 1px 0px #363131 inset;
+	border-radius: 4px;
+}
+
+/*----------------------------LEARNSET TABLE---------------------------------------------------------------*/
+
+#learnset {
+	margin-top: 50px;
+	background: #A040A0;
+	border: solid 3px #EBD69D;
+	border-radius: 10px;
+}
+
+#learnset tr th{
+	height: 40px;
+	font-size: 26px;
+	margin: 0 auto;
+	background: #C183C1;
+	border-radius: 10px 10px 0 0;
+}
+
+#learnset tr td table{ 
+	border-collapse: collapse;
+}
+
+#learnset tr td table thead tr td{ 
+	color: #000; 
+	font-weight: bold; 
+	background: #E0C068;
+	border: solid 1px #E0C068;
+}
+
+#learnset tr td table tr td{
+	border: solid 1px #D8D8D8;
+	background: #fff;
+}
+
+#learnset tr td table tr td:nth-child(1){
+	width: 64px;
+}
+
+#learnset tr td table tr td:nth-child(2){
+	width: 84px;
+}
+
+#learnset tr td table tr td:nth-child(3){
+	width: 61px;
+}
+
+#learnset tr td table tr td{
+	width: 50px;
+	height: 24px;
+}
+
+#learnset #bottom{
+	width: 1px;
+	background: #EBD69D;
+	border-radius: 0 0 10px 10px;
+}
+
+#learnset tr:last-child td ul{
+	padding-left: 20px;
+	font-size: 10px;
+}
+
+/*----------------------------------POKEMONLIST TABLE--------------------------------------------*/
+
+#pokemonlist{
+	background: #CCCCFF;
+	border: solid 5px  #BEBED1;
+	border-radius: 10px;
+	border-spacing: 2px;
+	padding: 2px;
+}
+
+#pokemonlist tr td {
+	height: 43px;
+	width: 62px;
+	background: #fff;
+	color: #fff;
+	text-align: center;
+	font-size: 15px;
+}
+
+#pokemonlist tr td:nth-child(1) {	width: 35px; color: #000; font-size: 12px; text-align: left;	}
+#pokemonlist tr td:nth-child(2) {	width: 40px;	}
+#pokemonlist tr td:nth-child(3){	width: 77px; color: #000; text-align: left;	}
+
+/*------------------------------------TYPE BATLE PROPERTIES-------------------------------------*/
+
+#typeBP {
+	background: #CCCCFF;
+	border: solid 3px #BEBED1;
+	border-radius: 10px;
+	font-family: arial;
+	font-size: 16px;
+}
+
+#typeBP tr:nth-child(1) th:nth-child(1) {
+	background: #A44C4B;
+	border-radius: 5px 0 0 0;
+}
+
+#typeBP tr:nth-child(1) th:nth-child(3) {
+	background: #4C4BA4;
+	border-radius: 0 5px 0 0;
+}
+
+#typeBP tr:nth-child(2) th:nth-child(-n+2){
+	background: #A44C4B;
+}
+
+#typeBP tr:nth-child(2) th:nth-child(n+4) {
+	background: #4C4BA4;
+}
+
+#typeBP tr:nth-child(3) td:nth-child(1), #typeBP tr:nth-child(4) td:nth-child(3){
+	background: #009900;
+}
+
+#typeBP tr:nth-child(3) td:nth-child(3), #typeBP tr:nth-child(4) td:nth-child(1){
+	background: #FF0000;
+}
+
+#typeBP tr:nth-child(5) td:nth-child(1), #typeBP tr:nth-child(5) td:nth-child(3) {
+	background: #000;
+}
+
+#typeBP tr:nth-child(3) td:nth-child(1), #typeBP tr:nth-child(4) td:nth-child(3), #typeBP tr:nth-child(3) td:nth-child(3), #typeBP tr:nth-child(4) td:nth-child(1), #typeBP tr:nth-child(5) td:nth-child(1), #typeBP tr:nth-child(5) td:nth-child(3){
+	color: #fff;
+	font-family: arial black;
+	font-size: 26px;
+	text-align: center;
+}
+
+#typeBP tr:nth-child(5) td:nth-child(1){	border-radius: 0 0 0 5px;	}
+
+#typeBP tr:nth-child(5) td:nth-child(4){	border-radius: 0 0 5px 0;	}
+
+/*------------------------------------POKEMON BATLE PROPERTIES-------------------------------------*/
+
+#pokemonBP {
+	background: #B8B8D0;
+	border: 3px solid #B8A038;
+	border-radius: 10px;
+	text-align: center;
+	width: 450px;
+}
+
+#pokemonBP tr th{
+	background: #B8A038;
+	color: #fff;
+}
+
+#pokemonBP tr td{
+	background: #D1D1E0;
+}
+
+#pokemonBP:first-child{
+	width: 55px;
+}
+
+#pokemonBP tr:first-child th{
+	border-radius: 10px 10px 0 0;
+}
+
+#pokemonBP tr:last-child td:first-child{
+	border-radius: 0 0 0 10px;
+}
+
+#pokemonBP tr:last-child td:last-child{
+	border-radius: 0 0 10px 0;
+}

@@ -1,0 +1,239 @@
+<html>
+<head>
+	<script src="pokemon.js"></script>
+	<script src="pokemonDB.js"></script>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+	<ul id="menu">
+		<li>index</li>
+		<li>Type</li>
+		<li>Atribute</li>
+	</ul>
+	<div id="clear"></div>
+	
+	<br><br><br><br>
+	
+	<table id="pokemonBP" >
+		<tr>
+			<th colspan="2">"pokemon name"</th>
+		</tr>
+		<tr>
+			<th>Damage</th>
+			<th>Types</th>
+		</tr>
+		
+		<tr>
+			<td>4&times;</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>2&times;</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>1&times;</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>&frac12;&times;</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>&frac14;&times;</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>0&times;</td>
+			<td></td>
+		</tr>
+		
+	</table>
+	
+	<br><br><br><br>
+		
+	<table id="learnset" >
+		<tr>
+			<th colspan="6">Moveset Table exemple</th>
+		</tr>
+		<tr>
+			<td colspan="6" >
+				<table>
+					<thead>
+						<tr>
+							<td>Level</td>
+							<td>Move</td>
+							<td>Type</td>
+							<td>Pwr.</td>
+							<td>Acc.</td>
+							<td>PP</td>
+						</tr>
+					</thead>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+		<tr>
+			<td colspan="6" id="bottom" >
+				<ul>
+					<li>A level of "Start" indicates a move that will be known by a Nidoking obtained at level 1</li>
+					<li>Bold indicates a move that gets STAB when used by Nidoking</li>
+					<li>Click on the generation numbers at the top to see level-up moves from other generations</li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+	
+	<br><br><br><br>
+	
+	<!--
+	
+	<table id="pokemonlist" >
+		<tr>
+			<td colspan="4" >
+				<table>
+					<tr>
+						<td>
+							icon
+						</td>
+						<td>
+							Nome
+						</td>
+						<td>
+							Type 1
+						</td>
+						<td>
+							Type 2
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="4">
+				<table>
+					<tr>
+						<td>img</td>
+						<td>nome</td>
+						<td>type</td>
+						<td>type</td>
+					</tr>
+					<tr>
+						<td>img</td>
+						<td>nome</td>
+						<td>type</td>
+						<td>type</td>
+					</tr>
+					<tr>
+						<td>img</td>
+						<td>nome</td>
+						<td>type</td>
+						<td>type</td>
+					</tr>
+				</table>
+			</td>
+		</td>
+	</table>
+	
+	<br><br><br><br>
+	
+	
+	<table id="typeBP" >
+		<tr>
+			<th colspan="2" class="" >Offensive</th>
+			<th class="typeref" >Ice</th>
+			<th colspan="2" >Defensive</th>
+		</tr>
+		<tr>
+			<th>Power</th>
+			<th>Types</th>
+			<th rowspan="4" ></th>
+			<th>Power</th>
+			<th>Types</th>
+		</tr>
+		<tr>
+			<td>2×</td>
+			<td>
+				<a title="Dragon" class="typeref" >Dragon</a>
+				<br>
+				<a title="Flying"class="typeref" >Flying</a>
+				<br>
+				<a title="Grass"class="typeref" >Grass</a>
+				<br>
+				<a title="Ground"class="typeref" >Ground</a>
+			</td>
+			<td>½×</td>
+			<td>
+				<a title="Ice" class="typeref" > Ice </a>
+			</td>
+		</tr>
+		<tr>
+			<td>½×</td>
+			<td>
+				<a title="Fire" class="typeref" >Fire</a>
+				<br>
+				<a title="Ice" class="typeref" >Ice</a>
+				<br>
+				<a title="Steel" class="typeref" >Steel</a>
+				<br>
+				<a title="Water" class="typeref" >Water</a>
+			</td>
+			<td>2×</td>
+			<td>
+				<a title="Fighting" class="typeref" >Fight</a>
+				<br>
+				<a title="Fire" class="typeref" >Fire</a>
+				<br>
+				<a title="Rock" class="typeref" >Rock</a>
+				<br>
+				<a title="Steel" class="typeref" >Steel</a>
+				<br>
+			</td>
+		</tr>
+		<tr>
+			<td>0×</td>
+			<td>
+				<a>None</a>
+			</td>
+			<td>0×</td>
+			<td>
+				<a>None</a>
+			</td>
+		</tr>
+	</table>
+	-->
+	
+	<input type="text" value="grass" id="hue"></input>
+	<button onclick="hue(document.getElementById('hue').value)" >hueheueheuaheueheuehuee</button>
+	<div id="tst"></div>
+</div>
+
+</body>
+
+</html>

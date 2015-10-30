@@ -1,0 +1,141 @@
+<html>
+<head>
+	<script>
+	type = [];
+	type[0] = "normal";
+	type[1] = "fighting";
+	type[2] = "flying";
+	type[3] = "poison";
+	type[4] = "ground";
+	type[5] = "rock";
+	type[6] = "bug";
+	type[7] = "ghost";
+	type[8] = "steel";
+	type[9] = "fire";
+	type[10] = "water";
+	type[11] = "grass";
+	type[12] = "electric";
+	type[13] = "psychic";
+	type[14] = "ice";
+	type[15] = "dragon";
+	type[16] = "dark";
+
+	
+	
+	function scanner( string, stats ){
+	
+		var s = string.split(" ");
+		var s2 = stats.split( "*" );
+		var l = s.length;
+		var fs = "";
+		var ex = "";
+		alert(s2.length)
+	
+		for ( var i = 0; i < l; i++ ){
+		
+			s[i] = s[i].toLowerCase();
+			s[i] = s[i].split("	");
+			var ts;
+		
+			if ( s[i][4] != null   ){
+				
+				ts = s[i][3]+", "+s[i][4];
+				
+			}else {
+			
+				ts = s[i][3]+", ";
+			
+			}
+			
+			
+			ex = statsfix( s2[i] );
+			fs +=  'pokemon['+i+'] = { name: "'+ s[i][2] + '", type: "'+ts+'", stats: "'+ex+'" } <br>';
+		
+			}
+	
+		document.getElementById("tab").innerHTML = fs;
+	}
+	
+	function statsfix( s ){
+		
+		if ( s == null){ return; }
+		
+		var str = s.split("	");
+		var rs = "";
+		
+		for ( var i = 0; i < str.length; i++ ){
+		
+			rs += str[i]+", ";
+		
+		}
+		
+	return rs.substring( 0, rs.length-3 );	
+	
+	}
+	
+	/*if ( s[i].substring(  0, 1 )  == "#" ){
+			
+				fs[fs.length] = 'pokemon['+fs.length+'] = { number: "'+ s[i].substring( 1, 4 ) +'", name: ';
+				s[i] = s[i].substring( 9, s[i].length );
+				
+			}
+			
+			if ( isLetter( s[i] ) ){
+	
+				for ( var x = 0; x < 17; x++ ){
+			
+					for ( var y = 0; y < s[i].length-type[x].length; y++){
+						
+						if ( s[i].substring( y, y+type[x].length ) == type[x]  ){
+						
+							ex += type[x];
+							s[i].replace( type[x], "" );
+							prompt("!", s[i])
+
+						}
+					
+					}
+				
+				}
+			
+			}
+			
+				alert( fs[fs.length-1] +"\n"+s[i])
+		*/
+	
+	function isLetter( string ){
+	
+	var s = string.charAt( 0 ).toUpperCase();
+	if ( s.toLowerCase() != s ){
+		return true;
+	}else{
+		return false;
+	}
+	}
+	
+	</script>
+	<link rel="stylesheet" href="stylo.css" type="text/css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<body>
+
+	<div id="container">
+		<input type="text" id="form"  contenteditable="true" style=" " >
+		</input>
+		<input type="text" id="form2"  contenteditable="true" style=" " >
+		</input>
+		<center>
+		<div id="result">
+		<br><br>
+		<button onclick="scanner( getElementById('form').value , getElementById('form2').value )">Gerar Codigo</button>
+		<br><br>
+		<div id="tab" contenteditable="true" > </div>
+		</div>
+		</center>
+		<span id="limpa"></span>
+	</div>
+	
+</body>
+
+</html>

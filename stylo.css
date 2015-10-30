@@ -1,0 +1,43 @@
+body { font-family: verdana;}
+
+#container {
+	width: 80%;
+	height: auto;
+	margin: 100px auto;
+	border: solid 3px;
+}
+
+#form {
+	border: solid 3px;
+	width: 50%;
+	min-height: 100%;
+	height: auto;
+	float: left;
+}
+
+#result {
+	border: solid 3px;
+	width: 49%;
+	min-height: 100%;
+	height: auto;
+	float: right;
+}
+
+#form ul{ 
+	list-style: none;
+	margin: 20px auto 20px;
+	}
+
+#form ul li{ 
+	margin: 10px auto 10px;
+}
+
+#form ul li input{
+	width: 130px;
+}
+
+#tab{
+	text-align:justify;
+}
+
+#limpa { clear: both;}
